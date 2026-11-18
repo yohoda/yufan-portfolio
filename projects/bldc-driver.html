@@ -12,7 +12,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="../index.html">余帆<span>.</span></a>
+    <a class="brand" href="../index.html">余帆的作品集<span>.</span></a>
     <nav class="nav">
       <a href="../index.html#projects">全部项目</a>
       <a href="../index.html#contact">联系</a>
@@ -47,14 +47,14 @@
 
   <div class="content-block">
     <h2>问题</h2>
-    <p>市售驱动板参数封闭，出了问题只能换板子，学不到东西。我想知道从母线到相电流的每一级到底发生了什么，所以决定自己设计一块。</p>
+    <p>市售驱动板参数封闭，大部分出了问题只能换板子，不知道是哪里故障，学不到东西。我想知道从母线到相电流的每一级到底发生了什么，所以决定自己设计一块。</p>
   </div>
 
   <div class="content-block">
     <h2>方案</h2>
     <ul>
       <li>主控 STM32G474VET6，负责 PWM 输出、ADC 采样与保护逻辑。</li>
-      <li>功率级用三相全桥，配套电流采样与过流保护电路。</li>
+      <li>功率级用三相 H 桥，配套电流采样与过流保护电路。</li>
       <li>布局上把功率回路与信号回路分区，避免开关噪声串进采样通道。</li>
       <li>固件侧同时支持 FOC 与六步换相，方便对比两种控制方式的效率与噪声表现。</li>
     </ul>
@@ -73,8 +73,8 @@
     <h2>技术栈</h2>
     <div class="tags">
       <span class="tag">STM32G474</span>
-      <span class="tag">Altium Designer</span>
-      <span class="tag">三相全桥</span>
+      <span class="tag">嘉立创 EDA</span>
+      <span class="tag">三相 H 桥</span>
       <span class="tag">FOC</span>
       <span class="tag">六步换相</span>
       <span class="tag">电流采样</span>
