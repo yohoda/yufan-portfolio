@@ -618,8 +618,8 @@ a { color: inherit; }
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 0.26s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-duration: 0.16s;
+  animation-timing-function: linear;
 }
 
 ::view-transition-old(root) {
@@ -631,24 +631,14 @@ a { color: inherit; }
 }
 
 @keyframes vt-fade-out {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
   to {
     opacity: 0;
-    transform: translateY(-8px);
   }
 }
 
 @keyframes vt-fade-in {
   from {
     opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -658,17 +648,5 @@ a { color: inherit; }
   ::view-transition-new(root) {
     animation: none;
   }
-}
-
-/* ---------- 共享元素转场：驱动板 ---------- */
-
-/* 首页卡片图与详情页首图使用同一个视图名，点击时图片会从卡片位置飞入详情页 */
-.share-bldc {
-  view-transition-name: bldc-photo;
-}
-
-::view-transition-group(bldc-photo) {
-  animation-duration: 0.34s;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
