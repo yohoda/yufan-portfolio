@@ -660,3 +660,15 @@ a { color: inherit; }
   }
 }
 
+/* ---------- 共享元素转场：驱动板 ---------- */
+
+/* 首页卡片图与详情页首图使用同一个视图名，点击时图片会从卡片位置飞入详情页 */
+.share-bldc {
+  view-transition-name: bldc-photo;
+}
+
+::view-transition-group(bldc-photo) {
+  animation-duration: 0.34s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
