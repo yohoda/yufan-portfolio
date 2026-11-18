@@ -1,0 +1,9 @@
+# 系统与编辑器
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 临时与备份
+*.tmp
+*.bak
+*.log

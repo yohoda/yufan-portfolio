@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>掌上宠物 · 余帆</title>
+<meta name="description" content="基于 STM32F103 与 ASRPRO 的离线语音交互装置：语音识别、舵机动作与 OLED 表情的完整闭环。">
+<link rel="stylesheet" href="../style.css">
+<script src="../script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">余帆<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">全部项目</a>
+      <a href="../index.html#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <a class="back-link" href="../index.html#projects">← 返回项目列表</a>
+
+  <section class="project-hero">
+    <h1>掌上宠物</h1>
+    <p class="subtitle">离线语音交互的桌面小装置。说一句话，它会动、会做表情，全程不联网。</p>
+    <div class="tags">
+      <span class="tag accent">硬件调试</span>
+      <span class="tag">2025.04 – 2025.06</span>
+      <span class="tag">软件模块划分</span>
+    </div>
+  </section>
+
+  <!-- 素材位：把 <div class="media"> 内的 <span> 换成 <img>，
+       并给 .media 加 has-media 类。 -->
+  <div class="media-stack">
+    <div class="media has-media"><img src="../assets/pet-pcb.webp" alt="掌上宠物 PCB 3D 渲染"></div>
+  </div>
+
+  <div class="content-block">
+    <h2>问题</h2>
+    <p>语音助手都要联网，延迟高还担心隐私。我想做一个断网也能听话的小东西。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>方案</h2>
+    <ul>
+      <li>STM32F103 作为主控，接入 ASRPRO 做离线指令识别，不依赖云端。</li>
+      <li>舵机负责动作反馈，OLED 负责表情显示，形成「听到 → 动作 → 表情」的闭环。</li>
+      <li>软件按识别、控制、显示分模块，验证多任务并发下的响应实时性。</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>结果</h2>
+    <ul>
+      <li>完成全系统硬件调试，识别到动作的链路稳定响应。</li>
+      <li>多任务协同下，识别、动作与显示三者互不阻塞。</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>技术栈</h2>
+    <div class="tags">
+      <span class="tag">STM32F103</span>
+      <span class="tag">ASRPRO</span>
+      <span class="tag">离线语音识别</span>
+      <span class="tag">舵机控制</span>
+      <span class="tag">OLED</span>
+      <span class="tag">多任务调度</span>
+    </div>
+  </div>
+
+  <nav class="pager">
+    <a href="usb-hub.html">
+      <span class="label">上一个</span>
+      ← USB3.0 拓展坞
+    </a>
+    <a class="next" href="balance-car.html">
+      <span class="label">下一个</span>
+      两轮循迹平衡小车 →
+    </a>
+  </nav>
+
+</main>
+
+<footer class="site-footer container">
+  <span>© 2026 余帆</span>
+  <span>由 HTML / CSS 手工搭建</span>
+</footer>
+
+</body>
+</html>

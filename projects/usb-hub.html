@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USB3.0 拓展坞 · 余帆</title>
+<meta name="description" content="基于 VL812 的 USB3.0 Hub：1 进 4 出，单电源 5V 方案，高速差分对走线与回流路径处理。">
+<link rel="stylesheet" href="../style.css">
+<script src="../script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">余帆<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html#projects">全部项目</a>
+      <a href="../index.html#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <a class="back-link" href="../index.html#projects">← 返回项目列表</a>
+
+  <section class="project-hero">
+    <h1>USB3.0 拓展坞</h1>
+    <p class="subtitle">1 进 4 出，单电源 5V，手焊样板。我想亲手验证一遍高速信号到底有多挑布局。</p>
+    <div class="tags">
+      <span class="tag accent">PCB Layout</span>
+      <span class="tag">2025.09 – 2025.10</span>
+      <span class="tag">焊接与测试</span>
+    </div>
+  </section>
+
+  <div class="media-stack">
+    <div class="media"><span>③ 差分对走线微距</span></div>
+  </div>
+
+  <div class="media-grid">
+    <div class="media has-media" data-ratio="4/3"><img src="../assets/usb-pcb.webp" alt="USB3.0 拓展坞 PCB 3D 渲染"></div>
+    <div class="media" data-ratio="4/3"><span>② PCB 背面</span></div>
+    <div class="media"><span>④ 四口同时测速截图</span></div>
+    <div class="media"><span>⑤ 热成像（可选，没有可删）</span></div>
+  </div>
+
+  <div class="content-block">
+    <h2>问题</h2>
+    <p>USB3.0 跑 5 Gbps，差分对走错一点就掉速、掉盘。我想亲手验证一遍高速信号到底有多挑布局。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>方案</h2>
+    <ul>
+      <li>基于 VL812 做主控，完成 1 路输入、4 路输出的 PCB 布局布线。</li>
+      <li>高速差分对做等长与阻抗控制，重点处理回流路径，避免跨分割。</li>
+      <li>电源部分落地单电源 5V 方案，板内生成 3.3V 与 1.2V，按负载分区布置去耦。</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>结果</h2>
+    <ul>
+      <li>完成样机焊接与整机调试，四口同时工作稳定。</li>
+      <li>验证了高速差分信号在本板叠层与走线条件下的稳定输入输出。</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>技术栈</h2>
+    <div class="tags">
+      <span class="tag">VL812</span>
+      <span class="tag">USB3.0</span>
+      <span class="tag">阻抗控制</span>
+      <span class="tag">回流路径</span>
+      <span class="tag">DC-DC</span>
+      <span class="tag">手工焊接</span>
+    </div>
+  </div>
+
+  <nav class="pager">
+    <a href="bldc-driver.html">
+      <span class="label">上一个</span>
+      ← 无刷电机驱动板
+    </a>
+    <a class="next" href="pocket-pet.html">
+      <span class="label">下一个</span>
+      掌上宠物 →
+    </a>
+  </nav>
+
+</main>
+
+<footer class="site-footer container">
+  <span>© 2026 余帆</span>
+  <span>由 HTML / CSS 手工搭建</span>
+</footer>
+
+</body>
+</html>

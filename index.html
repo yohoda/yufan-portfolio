@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>余帆 · 嵌入式硬件工程师</title>
+<meta name="description" content="余帆，嵌入式硬件工程师，机器人工程本科 2026 届。STM32、2–6 层 PCB、FOC 与 PID，从原理图到整机调试的四个硬件项目。">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">余帆<span>.</span></a>
+    <nav class="nav">
+      <a href="#projects">项目</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ==================== Hero ==================== -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="reveal">画板子，焊板子，<em>调板子</em>。</h1>
+      <p class="lede reveal">从原理图到整机跑起来，四个项目我全程自己走完。</p>
+      <div class="meta reveal">
+        <span><strong>余帆</strong> · 嵌入式硬件工程师</span>
+        <span>机器人工程 · 2026 届</span>
+        <span>STM32 / PCB / 电机驱动</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 项目 ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>项目</h2>
+        <span class="count">04</span>
+      </div>
+
+      <div class="projects">
+
+        <a class="card reveal" href="projects/bldc-driver.html">
+          <div class="media has-media"><img src="assets/bldc-pcb.webp" alt="无刷电机驱动板 PCB 3D 渲染"></div>
+          <div class="card-body">
+            <h3 class="card-title">无刷电机驱动板</h3>
+            <p class="card-desc">自己设计、打样、焊接、调通的 BLDC 驱动板，支持 FOC 与六步换相。</p>
+          </div>
+        </a>
+
+        <a class="card reveal" href="projects/usb-hub.html">
+          <div class="media has-media"><img src="assets/usb-pcb.webp" alt="USB3.0 拓展坞 PCB 3D 渲染"></div>
+          <div class="card-body">
+            <h3 class="card-title">USB3.0 拓展坞</h3>
+            <p class="card-desc">1 进 4 出，手焊样板，处理了 USB3.0 差分走线与回流路径。</p>
+          </div>
+        </a>
+
+        <a class="card reveal" href="projects/pocket-pet.html">
+          <div class="media has-media"><img src="assets/pet-pcb.webp" alt="掌上宠物 PCB 3D 渲染"></div>
+          <div class="card-body">
+            <h3 class="card-title">掌上宠物</h3>
+            <p class="card-desc">说一句话，它会动、会做表情，全程不联网。</p>
+          </div>
+        </a>
+
+        <a class="card reveal" href="projects/balance-car.html">
+          <div class="media has-media"><img src="assets/car-pcb.webp" alt="两轮循迹平衡小车 PCB 3D 渲染"></div>
+          <div class="card-body">
+            <h3 class="card-title">两轮循迹平衡小车</h3>
+            <p class="card-desc">PID 自平衡 + 循迹，姿态解算下沉到 MPU6050。</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 技能 ==================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>技能</h2>
+        <span class="count">Hardware / Firmware</span>
+      </div>
+
+      <dl class="skills reveal">
+        <div class="skill-row">
+          <dt>硬件设计</dt>
+          <dd>原理图设计 · 2–6 层 PCB 布局布线 · 器件选型 · Altium Designer / 嘉立创 EDA</dd>
+        </div>
+        <div class="skill-row">
+          <dt>嵌入式</dt>
+          <dd>STM32F103 / STM32G474 · Keil5 · CubeMX · PID · DMP 姿态解算</dd>
+        </div>
+        <div class="skill-row">
+          <dt>电机与功率</dt>
+          <dd>FOC · 六步换相 · 三相全桥 · 电流采样 · 过流保护</dd>
+        </div>
+        <div class="skill-row">
+          <dt>调试</dt>
+          <dd>示波器 · 万用表 · 烙铁 / 热风枪 · 打样回流 · 硬件故障定位</dd>
+        </div>
+        <div class="skill-row">
+          <dt>其他</dt>
+          <dd>SolidWorks · CAD · ANSYS · 英文 datasheet 与芯片手册阅读</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ==================== 联系 ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>联系</h2>
+        <span class="count">Get in touch</span>
+      </div>
+
+      <div class="contact-card reveal">
+        <div>
+          <h3>余帆 · 嵌入式硬件工程师</h3>
+          <p>机器人工程本科 2026 届 · 广东潮州（可接受外地）</p>
+        </div>
+        <a class="btn" href="mailto:gaiyufan@outlook.com">gaiyufan@outlook.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <span>© 2026 余帆</span>
+  <span>由 HTML / CSS 手工搭建</span>
+</footer>
+
+</body>
+</html>
