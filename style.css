@@ -558,3 +558,49 @@ a { color: inherit; }
   filter: none;
 }
 
+/* ---------- 工作台 ---------- */
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.tool {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.tool .media {
+  border-bottom: 1px solid var(--line);
+}
+
+.tool-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+}
+
+.tool-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.tool-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.tool-body p + p {
+  margin-top: 0.65rem;
+}
+
+@media (max-width: 720px) {
+  .tools {
+    grid-template-columns: 1fr;
+  }
+}
+
