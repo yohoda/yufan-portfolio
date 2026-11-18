@@ -2,7 +2,9 @@
 
 纯静态个人作品集。深色主题，单一强调色，无外部依赖，不加载任何 CDN。
 
-**线上地址：** https://inland-skunk-d4germ4o05c8dd921-1535687828.tcloudbaseapp.com/
+**线上地址：** https://yohoda.github.io/yufan-portfolio/
+
+**备用地址：** https://inland-skunk-d4germ4o05c8dd921-1535687828.tcloudbaseapp.com/ （腾讯云 CloudBase，国内更快，但有「测试域名」提示页，需点一次继续访问）
 
 ## 内容
 
