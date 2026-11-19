@@ -667,3 +667,38 @@ button:focus-visible,
   border-radius: 4px;
 }
 
+/* ---------- 关于我 ---------- */
+
+.about {
+  padding: 0 0 clamp(2rem, 6vh, 4rem);
+}
+
+.about p {
+  margin: 0 0 1rem;
+  max-width: 62ch;
+  color: #d3d3d9;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.about .about-lead {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- 证书行 ---------- */
+
+.creds {
+  margin: 1.6rem 0 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
