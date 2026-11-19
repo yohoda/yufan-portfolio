@@ -64,9 +64,9 @@
   <div class="content-block">
     <h2>方案</h2>
     <ul>
-      <li>基于 VL812 做主控，完成 1 路输入、4 路输出的 PCB 布局布线。</li>
-      <li>高速差分对做等长与阻抗控制，重点处理回流路径，避免跨分割。</li>
-      <li>电源部分落地单电源 5V 方案，板内生成 3.3V 与 1.2V，按负载分区布置去耦。</li>
+      <li>基于 VL812 单芯片方案，1 进 4 出 USB3.0，无需固件，焊好即用。</li>
+      <li>USB3.0 差分对按 90Ω 阻抗控制，对内长度误差压到 5mil 以内，走线不超过 1800mil，换层处补回流地孔。</li>
+      <li>单电源 5V 输入，板内生成 3.3V 与 1.2V；输入端串 SY6280 做 1A 限流，保护笔电接口。</li>
     </ul>
   </div>
 
@@ -88,7 +88,8 @@
     <div class="tags">
       <span class="tag">VL812</span>
       <span class="tag">USB3.0</span>
-      <span class="tag">阻抗控制</span>
+      <span class="tag">90Ω 差分</span>
+      <span class="tag">5mil 等长</span>
       <span class="tag">回流路径</span>
       <span class="tag">DC-DC</span>
       <span class="tag">手工焊接</span>

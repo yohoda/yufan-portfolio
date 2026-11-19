@@ -64,9 +64,9 @@
   <div class="content-block">
     <h2>方案</h2>
     <ul>
-      <li>主控 STM32G474VET6，负责 PWM 输出、ADC 采样与保护逻辑；功率级用三相 H 桥，配套电流采样与过流保护。</li>
-      <li>布局上把功率回路与信号回路分区，避免开关噪声串进采样通道。</li>
-      <li>固件侧同时支持 FOC 与六步换相，方便对比两种控制方式的效率与噪声表现。</li>
+      <li>主控 STM32G474VET6；功率级用 6 颗 IRFS3607 组成三相 H 桥，IR2101 半桥驱动加 TLP2355 光耦隔离，栅极电阻 22Ω。</li>
+      <li>相电流用 20mΩ 采样电阻 + 两级运放放大，1.25V 偏置做双向采样；LMV393 比较器负责硬件过流与过零检测。</li>
+      <li>板载霍尔接口、NTC 测温、制动电路；CAN（TJA1051）与 USB Type-C（CH340X 自动下载）通信，外挂 AT24C02 与 W25Q128 存储。</li>
     </ul>
   </div>
 
@@ -76,6 +76,7 @@
       <li>完成原理图 → PCB → 打样 → 焊接 → 上电调试全流程，项目作为校级大创结项。</li>
       <li>用示波器逐项核对供电轨与 PWM 波形，用相电流波形确认换相时序正确。</li>
       <li>在调试中定位并解决了上电与采样环节的硬件问题。</li>
+      <li>硬件规格：6 路 MOSFET 三相桥、20mΩ 采样、1.25V 偏置双向电流采样、硬件过流与过零双保护。</li>
     </ul>
   </div>
 
@@ -94,6 +95,10 @@
       <span class="tag">六步换相</span>
       <span class="tag">电流采样</span>
       <span class="tag">过流保护</span>
+      <span class="tag">IRFS3607</span>
+      <span class="tag">IR2101</span>
+      <span class="tag">TLP2355</span>
+      <span class="tag">CAN</span>
     </div>
   </div>
 
