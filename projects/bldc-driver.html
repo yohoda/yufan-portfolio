@@ -53,7 +53,7 @@
   </div>
 
   <div class="media-stack">
-    <div class="media"><span>③ 相电流 + PWM 波形</span></div>
+    <div class="media" data-ratio="3/2"><img src="../assets/schematic-power.webp" alt="三相 H 桥与相电流采样原理图局部"></div>
   </div>
 
   <div class="content-block">
@@ -66,7 +66,7 @@
     <ul>
       <li>主控 STM32G474VET6；功率级用 6 颗 IRFS3607 组成三相 H 桥，IR2101 半桥驱动加 TLP2355 光耦隔离，栅极电阻 22Ω。</li>
       <li>相电流用 20mΩ 采样电阻 + 两级运放放大，1.25V 偏置做双向采样；LMV393 比较器负责硬件过流与过零检测。</li>
-      <li>板载霍尔接口、NTC 测温、制动电路；CAN（TJA1051）与 USB Type-C（CH340X 自动下载）通信，外挂 AT24C02 与 W25Q128 存储。</li>
+      <li>板上还画了霍尔接口、NTC 测温、制动电路，以及 CAN、USB Type-C 与存储扩展——这部分是设计层面的铺开，主线精力放在驱动与采样回路上。</li>
     </ul>
   </div>
 
