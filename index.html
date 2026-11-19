@@ -7,7 +7,18 @@
 <meta name="description" content="余帆，嵌入式硬件工程师，机器人工程本科 2026 届。STM32、2–6 层 PCB、FOC 与 PID，从原理图到整机调试的四个硬件项目。">
 <meta name="theme-color" content="#0a0a0b">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script src="script.js" defer></script>
+<!-- 分享卡片 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="余帆的作品集">
+<meta property="og:title" content="余帆 · 嵌入式硬件工程师">
+<meta property="og:description" content="余帆，嵌入式硬件工程师，机器人工程本科 2026 届。STM32、2–6 层 PCB、FOC 与 PID，从原理图到整机调试的四个硬件项目。">
+<meta property="og:url" content="https://yohoda.github.io/yufan-portfolio/">
+<meta property="og:image" content="https://yohoda.github.io/yufan-portfolio/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -49,7 +60,7 @@
       <div class="projects">
 
         <a class="card reveal" href="projects/bldc-driver.html">
-          <div class="media has-media"><img src="assets/bldc-pcb.webp" alt="无刷电机驱动板 PCB 3D 渲染"></div>
+          <div class="media has-media"><img fetchpriority="high" src="assets/bldc-pcb.webp" alt="无刷电机驱动板 PCB 3D 渲染"></div>
           <div class="card-body">
             <h3 class="card-title">无刷电机驱动板</h3>
             <p class="card-desc">自己设计、打样、焊接、调通的 BLDC 驱动板，支持 FOC 与六步换相。</p>
@@ -57,7 +68,7 @@
         </a>
 
         <a class="card reveal" href="projects/usb-hub.html">
-          <div class="media has-media"><img src="assets/usb-pcb.webp" alt="USB3.0 拓展坞 PCB 3D 渲染"></div>
+          <div class="media has-media"><img loading="lazy" src="assets/usb-pcb.webp" alt="USB3.0 拓展坞 PCB 3D 渲染"></div>
           <div class="card-body">
             <h3 class="card-title">USB3.0 拓展坞</h3>
             <p class="card-desc">1 进 4 出，手焊样板，处理了 USB3.0 差分走线与回流路径。</p>
@@ -65,7 +76,7 @@
         </a>
 
         <a class="card reveal" href="projects/pocket-pet.html">
-          <div class="media has-media"><img src="assets/pet-pcb.webp" alt="掌上宠物 PCB 3D 渲染"></div>
+          <div class="media has-media"><img loading="lazy" src="assets/pet-pcb.webp" alt="掌上宠物 PCB 3D 渲染"></div>
           <div class="card-body">
             <h3 class="card-title">掌上宠物</h3>
             <p class="card-desc">说一句话，它会动、会做表情，全程无需联网。</p>
@@ -73,7 +84,7 @@
         </a>
 
         <a class="card reveal" href="projects/balance-car.html">
-          <div class="media has-media"><img src="assets/car-pcb.webp" alt="两轮循迹平衡小车 PCB 3D 渲染"></div>
+          <div class="media has-media"><img loading="lazy" src="assets/car-pcb.webp" alt="两轮循迹平衡小车 PCB 3D 渲染"></div>
           <div class="card-body">
             <h3 class="card-title">两轮循迹平衡小车</h3>
             <p class="card-desc">PID 自平衡 + 循迹，姿态解算下沉到 MPU6050。</p>
@@ -128,7 +139,7 @@
       <div class="tools">
 
         <article class="tool reveal">
-          <div class="media" data-ratio="4/3"><img src="assets/tool-hotair.webp" alt="8586D 二合一热风枪焊台"></div>
+          <div class="media" data-ratio="4/3"><img loading="lazy" src="assets/tool-hotair.webp" alt="8586D 二合一热风枪焊台"></div>
           <div class="tool-body">
             <h3>热风枪 · 8586D 二合一</h3>
             <p>调板子的时候它是我的第二双手。贴片阻容焊歪了、功率管热坏了，风枪吹下来重焊，比整块板换掉快得多。</p>
@@ -137,7 +148,7 @@
         </article>
 
         <article class="tool reveal">
-          <div class="media" data-ratio="4/3"><img src="assets/tool-printer.webp" alt="Bambu Lab A1 3D 打印机"></div>
+          <div class="media" data-ratio="4/3"><img loading="lazy" src="assets/tool-printer.webp" alt="Bambu Lab A1 3D 打印机"></div>
           <div class="tool-body">
             <h3>3D 打印机 · Bambu Lab A1 mini</h3>
             <p>掌上宠物的白色外壳、平衡车的结构件，都是这台机器打的。</p>

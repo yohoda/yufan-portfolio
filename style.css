@@ -9,7 +9,7 @@
   --line: #232327;
   --text: #e9e9ec;
   --muted: #9898a1;
-  --dim: #4a4a53;
+  --dim: #6b6b76;
   --accent: #22d3ee;
   --radius: 14px;
   --maxw: 1080px;
@@ -648,5 +648,15 @@ a { color: inherit; }
   ::view-transition-new(root) {
     animation: none;
   }
+}
+
+/* ---------- 键盘焦点 ---------- */
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
